@@ -1,76 +1,88 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="shortcut icon" href="https://www.cuc.edu.co/templates/it_university3/favicon.ico">
-    <title>Zona CUC</title>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylus.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" media="screen" />
-    
-     
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>  
-     
-     <script src="radio.js" type="text/javascript"></script> 
-      
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zona CUC</title>
 
+  <style>
+      * {
+          size-adjust: 100%;
+          font-family: 'Gill Sans MT';
+      }
+      body {
+        background-image: url('img/fondo-textura-papel-arrugado-vintage.jpg');
+        background-attachment: fixed;
+        padding: auto;
+      }
+      .sidenav {
+        height: 100%;
+        width: 220px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #5e0000;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
 
-  </head>
-  <body>
-<div class="container">
-   <div class="player">
-     <div class="player__controls">
-       <div class="player__btn player__btn--small" id="previous">
-         <i class="fas fa-arrow-left"></i>
-       </div>
-       <h5 class="player__title">Unicuc</h5>
-       <div class="player__btn player__btn--small" id="icon-menu">
-         <i class="fas fa-bars"></i>
-       </div>
-     </div>
-     <div class="player__album">
-       <img src="img/ltransparente.png" alt="Album Cover" class="player__img" loading="lazy"/>
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+      }
 
-     </div>
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
 
-     <h2 class="player__artist">Radio</h2>
-     <h3 class="player__song">Online</h3>
+    .main {
+      margin-left: 160px; /* Same as the width of the sidebar */
+      padding: 0px 10px;
+    }
 
-   <br>
-      
- 
-     <audio class="player__audio" controls id="urladdress">
-       <source src="https://freeuk25.listen2myradio.com/live.mp3?typeportmount=s1_18335_stream_617943705" type="audio/mp3" />
-       <div id="stream_type">audio</div>
-       </audio>
-   
-   <br>
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
 
-
-  <div class="frame">
-        <a href="https://www.facebook.com/comunicacionunicosta/" class="btn">
-            <i class="fab fa-facebook-f facebook"></i>
-        </a>
-        <a href="https://www.cuc.edu.co/comunicacion-social-y-medios-digitales" class="btn">
-            <img src="img/cuc2.png"></i>
-        </a>
-        <a href="https://www.instagram.com/comunicacionunicosta/" class="btn">
-            <i class="fab fa-instagram instagram"></i>
-        </a>
-       
-        <a href="https://www.youtube.com/channel/UCUDMJbQe003YaFNpvJ7cDtw" class="btn" >
-            <i class="fab fa-youtube youtube"></i>
-        </a>
+    .center_box {
+      width: 550px;
+      text-align: center, justify;
+      padding-left: 420px;
+    }
+  </style>
+  
+</head>
+<body>
+  <main>
+    <header>
+      <h1 style="text-align: center;">
+        <img src="img/ltransparente.png" alt="Zona CUC" style="width: 45%; height: fit-content;">
+      </h1>
+    </header>
+    <div class="sidenav">
+      <h1 style="padding-left: 15px ;color: rgb(190, 178, 3);">ZONA CUC</h1>
+      <a href="https://www.cuc.edu.co/">About us</a>
+      <a href="https://zonacuc.radiostream321.com//">Emisora</a>
+      <a href="https://emma.cuc.edu.co/">Emma</a>
+      <a href="https://www.cuc.edu.co/comunicacion-social-y-medios-digitales">Pregrado</a>
     </div>
-<br>
-
-<div class="player__btn player__btn--small" >
- <h3>    <A HREF="https://zonacuc.radiostream321.com//"> URL - WEB </A> </h3>>
-   
-</div>
-</div>    
-   </div>
- </div>
-  </body>
+    <div class="center_box">
+      <p>
+        <strong>
+          Zona CUC es la emisora OnLine de la Universidad de la Costa, un espacio radial para que todos los jóvenes universitarios y comunidad académica contribuyan a la formación integral de la ciudadanía, la región y el país. Centrada en las narrativas sonoras, Zona CUC es la plataforma para que todos nos escuchemos.
+        </strong>
+      </p>
+    </div>
+      <div style="text-align: center;">
+        <audio class="player__audio" controls id="urladdress">
+          <source src="https://freeuk25.listen2myradio.com/live.mp3?typeportmount=s1_18335_stream_617943705" type="audio/mp3" />
+        </audio>
+      </div>
+  </main>
+</body>
 </html>

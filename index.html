@@ -6,83 +6,90 @@
   <title>Zona CUC</title>
 
   <style>
-      * {
-          size-adjust: 100%;
-          font-family: 'Gill Sans MT';
-      }
-      body {
-        background-image: url('img/fondo-textura-papel-arrugado-vintage.jpg');
-        background-attachment: fixed;
-        padding: auto;
-      }
-      .sidenav {
-        height: 100%;
-        width: 220px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #5e0000;
-        overflow-x: hidden;
-        padding-top: 20px;
-      }
-
-      .sidenav a {
-        padding: 6px 8px 6px 16px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-      }
-
-      .sidenav a:hover {
-        color: #f1f1f1;
-      }
-
-    .main {
-      margin-left: 160px; /* Same as the width of the sidebar */
-      padding: 0px 10px;
+    * {
+      box-sizing: border-box;
+      font-family: 'Gill Sans MT', sans-serif;
     }
 
-    @media screen and (max-height: 450px) {
-      .sidenav {padding-top: 15px;}
-      .sidenav a {font-size: 18px;}
+    body {
+      background-image: url('img/fondo-textura-papel-arrugado-vintage.jpg');
+      background-attachment: fixed;
+    }
+
+    header h1 {
+      text-align: center;
+    }
+
+    header img {
+      width: 65%;
+      height: auto;
+      max-width: 100%;
     }
 
     .center_box {
-      width: 550px;
-      text-align: center, justify;
-      padding-left: 420px;
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .justify {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .border {
+    max-width: 358px;
+    margin: 0 auto;
+    border: 30px solid rgb(145, 1, 1);
+    border-radius: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    footer {
+      text-align: center;
     }
   </style>
-  
 </head>
 <body>
-  <main>
+  <div class="main">
     <header>
-      <h1 style="text-align: center;">
-        <img src="img/ltransparente.png" alt="Zona CUC" style="width: 45%; height: fit-content;">
+      <h1 class="header img">
+        <img src="img/ltransparente.png" alt="Zona CUC">
       </h1>
     </header>
-    <div class="sidenav">
-      <h1 style="padding-left: 15px ;color: rgb(190, 178, 3);">ZONA CUC</h1>
-      <a href="https://www.cuc.edu.co/">About us</a>
-      <a href="https://zonacuc.radiostream321.com//">Emisora</a>
-      <a href="https://emma.cuc.edu.co/">Emma</a>
-      <a href="https://www.cuc.edu.co/comunicacion-social-y-medios-digitales">Pregrado</a>
-    </div>
-    <div class="center_box">
-      <p>
-        <strong>
-          Zona CUC es la emisora OnLine de la Universidad de la Costa, un espacio radial para que todos los jóvenes universitarios y comunidad académica contribuyan a la formación integral de la ciudadanía, la región y el país. Centrada en las narrativas sonoras, Zona CUC es la plataforma para que todos nos escuchemos.
-        </strong>
-      </p>
-    </div>
-      <div style="text-align: center;">
+    <div>
+      <div class="center_box">
+        <p>
+          <strong>
+            Zona CUC es la emisora OnLine de la Universidad de la Costa, un espacio radial para que todos los jóvenes universitarios y comunidad académica contribuyan a la formación integral de la ciudadanía, la región y el país. Centrada en las narrativas sonoras, Zona CUC es la plataforma para que todos nos escuchemos.
+          </strong>
+        </p>
+      </div>
+      <br>
+      <br>
+      <div class="justify">
+        <h3 style="color: rgb(190, 178, 3);">OnLine Radio</h3>
+      </div>
+      <div class="border">
         <audio class="player__audio" controls id="urladdress">
           <source src="https://freeuk25.listen2myradio.com/live.mp3?typeportmount=s1_18335_stream_617943705" type="audio/mp3" />
         </audio>
       </div>
-  </main>
+    </div>
+  </div>
+  <footer class="footer">
+    <h1 style="padding-left: 15px; color: rgb(190, 178, 3);">ZONA CUC</h1>
+    <a href="https://www.cuc.edu.co/">About us</a>
+    <a href="https://zonacuc.radiostream321.com//">Emisora</a>
+    <a href="https://emma.cuc.edu.co/">Emma</a>
+    <a href="https://www.cuc.edu.co/comunicacion-social-y-medios-digitales">Pregrado</a>
+  </footer>
 </body>
 </html>

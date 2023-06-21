@@ -14,6 +14,7 @@
     body {
       background-image: url('img/fondo-textura-papel-arrugado-vintage.jpg');
       background-attachment: fixed;
+      margin: 0;
     }
 
     header h1 {
@@ -27,7 +28,7 @@
     }
 
     .center_box {
-    max-width: 550px;
+    max-width: 400px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -52,16 +53,76 @@
     align-items: center;
     justify-content: center;
   }
-  footer {
-      background-color: rgb(145, 1, 1);
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-    }
+
+  .content {
+  min-height: calc(100vh - 60px); /* Subtract the footer height */
+}
+
+body {
+  margin: 0;
+}
+
+.content {
+  min-height: calc(100vh - 60px); /* Subtract the footer height */
+}
+
+footer {
+  background-color: rgb(145, 1, 1);
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer-left ul,
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-left ul li,
+.footer-right ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-middle p {
+  margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .footer-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-left,
+  .footer-right {
+    margin-bottom: 20px;
+  }
+  
+  .footer-left,
+  .footer-right,
+  .footer-middle {
+    width: 100%;
+  }
+}
   </style>
 </head>
 <body>
@@ -99,11 +160,35 @@
   <br>
   <br>
   <br>
-  <footer class="footer">
-    <a href="https://www.cuc.edu.co/">About us</a>
-    <a href="https://zonacuc.radiostream321.com//">Emisora</a>
-    <a href="https://emma.cuc.edu.co/">Emma</a>
-    <a href="https://www.cuc.edu.co/comunicacion-social-y-medios-digitales">Pregrado</a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <div class="footer-items">
+      <div class="footer-left">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </div>
+      <div class="footer-middle">
+        <p>Center Item</p>
+      </div>
+      <div class="footer-right">
+        <ul>
+          <li>Item 5</li>
+          <li>Item 6</li>
+          <li>Item 7</li>
+          <li>Item 8</li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

@@ -17,7 +17,7 @@
       margin: 0;
     }
 
-    header h1 {
+    header {
       text-align: center;
     }
 
@@ -47,11 +47,13 @@
     }
 
     .border {
-      max-width: 358px;
       margin: 0 auto;
-      border: 30px solid rgb(145, 1, 1);
-      border-radius: 180px;
       text-align: center;
+      width: 370px;
+      height: 80px;
+      padding-top: 13.5px;
+      border-radius: 20px;
+      background-color: rgb(145, 1, 1);
     }
 
     .content {
@@ -145,29 +147,29 @@
 <body>
   <div class="main">
     <header>
-      <h1 class="header">
+      <div class="header">
         <img src="img/ltransparente.png" alt="Zona CUC">
-      </h1>
-    </header>
-    <img src="img/cuc logo.png" class="center">
-    <div>
-      <div class="center_box">
-        <p>
-          <strong>
-            Zona CUC es la emisora OnLine de la Universidad de la Costa, un espacio radial para que todos los jóvenes universitarios y comunidad académica contribuyan a la formación integral de la ciudadanía, la región y el país. Centrada en las narrativas sonoras, Zona CUC es la plataforma para que todos nos escuchemos.
-          </strong>
-        </p>
       </div>
-    </div>
-    <br>
-    <br>
+    </header>
     <div class="justify">
-      <h3 style="color: rgb(190, 178, 3);">OnLine Radio</h3>
+      <h2 style="color: rgb(190, 178, 3);">OnLine Radio</h2>
     </div>
     <div class="border">
       <audio class="player__audio" controls id="urladdress">
         <source src="https://freeuk25.listen2myradio.com/live.mp3?typeportmount=s1_18335_stream_617943705" type="audio/mp3" />
       </audio>
+    </div>
+  </div>
+  <br>
+  <br>
+  <img src="img/cuc logo.png" class="center">
+  <div>
+    <div class="center_box">
+      <p>
+        <strong>
+          Zona CUC es la emisora OnLine de la Universidad de la Costa, un espacio radial para que todos los jóvenes universitarios y comunidad académica contribuyan a la formación integral de la ciudadanía, la región y el país. Centrada en las narrativas sonoras, Zona CUC es la plataforma para que todos nos escuchemos.
+        </strong>
+      </p>
     </div>
   </div>
   <br>

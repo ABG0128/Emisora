@@ -28,101 +28,108 @@
     }
 
     .center_box {
-    max-width: 400px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
     }
 
-  .justify {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
+    .justify {
+      text-align: center;
+    }
 
-  .border {
-    max-width: 358px;
-    margin: 0 auto;
-    border: 30px solid rgb(145, 1, 1);
-    border-radius: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    .border {
+      max-width: 358px;
+      margin: 0 auto;
+      border: 30px solid rgb(145, 1, 1);
+      border-radius: 180px;
+      text-align: center;
+    }
 
-  .content {
-  min-height: calc(100vh - 60px); /* Subtract the footer height */
-}
+    .content {
+      min-height: calc(100vh - 60px);
+    }
 
-body {
-  margin: 0;
-}
+    body,
+    .content {
+      margin: 0;
+    }
 
-.content {
-  min-height: calc(100vh - 60px); /* Subtract the footer height */
-}
+    footer {
+      background-color: rgb(145, 1, 1);
+      padding: 20px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: 1;
+    }
 
-footer {
-  background-color: rgb(145, 1, 1);
-  padding: 20px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
+    .footer-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+    }
 
-.footer-items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
+    .footer-items > div {
+      flex: 1;
+      text-align: center;
+      margin-bottom: 10px;
+    }
 
-.footer-left,
-.footer-middle,
-.footer-right {
-  text-align: center;
-  margin-bottom: 10px;
-}
+    .footer-items > div ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-.footer-left ul,
-.footer-right ul {
-  list-style: none;
-  padding: 0;
-}
+    .footer-items > div ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
 
-.footer-left ul li,
-.footer-right ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
+    .footer-left {
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Alinea al centro en lugar de al inicio */
+    }
 
-.footer-middle p {
-  margin: 0;
-}
+    .footer-right ul li:first-child a img {
+      transform: scale(1.6);
+    }
 
-/* Media Queries */
-@media (max-width: 768px) {
-  .footer-items {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .footer-left,
-  .footer-right {
-    margin-bottom: 20px;
-  }
-  
-  .footer-left,
-  .footer-right,
-  .footer-middle {
-    width: 100%;
-  }
-}
+    .footer-right ul li:last-child a img {
+      transform: scale(1.3); /* Aumenta el tamaño de la última imagen */
+    }
+    .footer-right ul li:last-child {
+      margin-left: auto;
+    }
+
+    .footer-middle img {
+      max-width: 42px;
+      height: auto;
+    }
+
+    .footer-items a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-items a:hover {
+      color: gray;
+    }
+
+    @media (max-width: 768px) {
+      .footer-items {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-items > div {
+        margin-bottom: 20px;
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -164,28 +171,59 @@ footer {
   <br>
   <br>
   <br>
-  <br>
-  <br>
-  <br>
   <footer>
     <div class="footer-items">
       <div class="footer-left">
         <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-          <li>Item 4</li>
+          <li>
+            <a href="https://zonacuc.radiostream321.com//">
+              <strong>About us</strong>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.cuc.edu.co/">
+              <strong>CUC</strong>
+            </a>
+          </li>
+          <li>
+            <a href="https://emma.cuc.edu.co/">
+              <strong>Emma</strong>
+            </a>
+          </li>
+          <li>
+            <a href="https://aulavirtual.cuc.edu.co/login/index.php">
+              <strong>Aula Virtual</strong>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="footer-middle">
-        <p>Center Item</p>
+        <a href="https://www.cuc.edu.co/comunicacion-social-y-medios-digitales">
+          <img src="img/cuc.png" alt="Link CUC">
+        </a>
       </div>
       <div class="footer-right">
         <ul>
-          <li>Item 5</li>
-          <li>Item 6</li>
-          <li>Item 7</li>
-          <li>Item 8</li>
+          <li>
+            <a class="footer-middle img" href="https://www.facebook.com/comunicacionunicosta/">
+              <img src="img/facebook logo.png" alt="Link Facebook">
+            </a>
+          </li>
+          <li>
+            <a class="footer-middle img" href="https://www.instagram.com/comunicacionunicosta/">
+              <img src="img/instagram logo.png" alt="Link Instagram">
+            </a>
+          </li>
+          <li>
+            <a class="footer-middle img" href="https://www.youtube.com/channel/UCUDMJbQe003YaFNpvJ7cDtw">
+              <img src="img/youtube logo.png" alt="Link youtube">
+            </a>
+          </li>
+          <li>
+            <a class="footer-middle img" href="https://twitter.com/comunicaCUC?t=sd57jqMaUewQ-q2a0Z3lwA&s=09">
+              <img src="img/twitter logo.png" alt="Link twitter" style="max-width: 30px;">
+            </a>
+          </li>
         </ul>
       </div>
     </div>

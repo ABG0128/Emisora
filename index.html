@@ -33,6 +33,15 @@
       text-align: center;
     }
 
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 35%;
+      height: auto;
+      max-width: 100%;
+    }
+
     .justify {
       text-align: center;
     }
@@ -91,16 +100,17 @@
     .footer-left {
       display: flex;
       align-items: center;
-      justify-content: center; /* Alinea al centro en lugar de al inicio */
+      justify-content: center;
     }
 
     .footer-right ul li:first-child a img {
-      transform: scale(1.6);
+      transform: scale(1.65);
+    }
+    .footer-right ul li:nth-last-child(2) a img {
+      transform: scale(1.3);
+      padding-bottom: 5px;
     }
 
-    .footer-right ul li:last-child a img {
-      transform: scale(1.3); /* Aumenta el tamaño de la última imagen */
-    }
     .footer-right ul li:last-child {
       margin-left: auto;
     }
@@ -135,10 +145,11 @@
 <body>
   <div class="main">
     <header>
-      <h1 class="header img">
+      <h1 class="header">
         <img src="img/ltransparente.png" alt="Zona CUC">
       </h1>
     </header>
+    <img src="img/cuc logo.png" class="center">
     <div>
       <div class="center_box">
         <p>
@@ -147,16 +158,16 @@
           </strong>
         </p>
       </div>
-      <br>
-      <br>
-      <div class="justify">
-        <h3 style="color: rgb(190, 178, 3);">OnLine Radio</h3>
-      </div>
-      <div class="border">
-        <audio class="player__audio" controls id="urladdress">
-          <source src="https://freeuk25.listen2myradio.com/live.mp3?typeportmount=s1_18335_stream_617943705" type="audio/mp3" />
-        </audio>
-      </div>
+    </div>
+    <br>
+    <br>
+    <div class="justify">
+      <h3 style="color: rgb(190, 178, 3);">OnLine Radio</h3>
+    </div>
+    <div class="border">
+      <audio class="player__audio" controls id="urladdress">
+        <source src="https://freeuk25.listen2myradio.com/live.mp3?typeportmount=s1_18335_stream_617943705" type="audio/mp3" />
+      </audio>
     </div>
   </div>
   <br>
@@ -197,11 +208,6 @@
           </li>
         </ul>
       </div>
-      <div class="footer-middle">
-        <a href="https://www.cuc.edu.co/comunicacion-social-y-medios-digitales">
-          <img src="img/cuc.png" alt="Link CUC">
-        </a>
-      </div>
       <div class="footer-right">
         <ul>
           <li>
@@ -222,6 +228,11 @@
           <li>
             <a class="footer-middle img" href="https://twitter.com/comunicaCUC?t=sd57jqMaUewQ-q2a0Z3lwA&s=09">
               <img src="img/twitter logo.png" alt="Link twitter" style="max-width: 30px;">
+            </a>
+          </li>
+          <li>
+            <a class="footer-middle img" href="https://www.cuc.edu.co/comunicacion-social-y-medios-digitales">
+              <img src="img/cuc.png" alt="Link CUC">
             </a>
           </li>
         </ul>

@@ -9,6 +9,8 @@
     * {
       box-sizing: border-box;
       font-family: 'Gill Sans MT', sans-serif;
+      margin: 0;
+      padding: 0;
     }
 
     body {
@@ -17,11 +19,11 @@
       margin: 0;
     }
 
-    header {
+    .header {
       text-align: center;
     }
 
-    header img {
+    .header img {
       width: 65%;
       height: auto;
       max-width: 100%;
@@ -49,9 +51,12 @@
     .border {
       margin: 0 auto;
       text-align: center;
-      width: 370px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      max-width: 350px;
       height: 80px;
-      padding-top: 13.5px;
       border-radius: 20px;
       background-color: rgb(145, 1, 1);
     }
@@ -65,9 +70,29 @@
       margin: 0;
     }
 
+    .container-photos{
+      width: 90%;
+      max-height: 300px;
+      height: 200px;
+      background: lightblue;
+    }
+
+    .container-marco {
+      width: 80%;
+      max-width: 450px;
+      height: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: black;
+    }
+
     footer {
       background-color: rgb(145, 1, 1);
-      padding: 20px;
+      padding: 5px;
       position: fixed;
       left: 0;
       bottom: 0;
@@ -76,6 +101,7 @@
     }
 
     .footer-items {
+      padding-bottom: 0px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
@@ -85,7 +111,7 @@
     .footer-items > div {
       flex: 1;
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 0px;
     }
 
     .footer-items > div ul {
@@ -145,12 +171,9 @@
   </style>
 </head>
 <body>
-  <div class="main">
-    <header>
-      <div class="header">
+    <div class="header">
         <img src="img/ltransparente.png" alt="Zona CUC">
-      </div>
-    </header>
+    </div>
     <div class="justify">
       <h2 style="color: rgb(190, 178, 3);">OnLine Radio</h2>
     </div>
@@ -159,23 +182,22 @@
         <source src="https://freeuk25.listen2myradio.com/live.mp3?typeportmount=s1_18335_stream_617943705" type="audio/mp3" />
       </audio>
     </div>
-  </div>
   <br>
   <br>
-  <img src="img/cuc logo.png" class="center">
-  <div>
-    <div class="center_box">
-      <p>
-        <strong>
-          Zona CUC es la emisora OnLine de la Universidad de la Costa, un espacio radial para que todos los jóvenes universitarios y comunidad académica contribuyan a la formación integral de la ciudadanía, la región y el país. Centrada en las narrativas sonoras, Zona CUC es la plataforma para que todos nos escuchemos.
-        </strong>
-      </p>
+  <div class="container-marco">
+    <div class="container-photos">
+
     </div>
+
   </div>
-  <br>
-  <br>
-  <br>
-  <br>
+  <div class="center_box">
+    <p>
+      <strong>
+        Zona CUC es la emisora OnLine de la Universidad de la Costa, un espacio radial para que todos los jóvenes universitarios y comunidad académica contribuyan a la formación integral de la ciudadanía, la región y el país. Centrada en las narrativas sonoras, Zona CUC es la plataforma para que todos nos escuchemos.
+      </strong>
+    </p>
+  </div>
+  <img src="img/cuc logo.png" class="center">
   <br>
   <br>
   <br>
